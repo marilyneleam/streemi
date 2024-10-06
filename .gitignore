@@ -7,7 +7,7 @@
 # Email spool folder
 /app/spool/*
 
-# Cache, session files and logs (Symfony3)
+# Cache, session files and logs (Symfony3)https://github.com/marilyneleam/streemi
 /var/cache/*
 /var/logs/*
 /var/sessions/*
@@ -50,3 +50,13 @@
 
 # Embedded web-server pid file
 /.web-server-pid
+
+# symfony/framework-bundle
+.env
+/.env.local
+/.env.local.php
+/.env.*.local
+/config/secrets/prod/prod.decrypt.private.php
+/public/bundles/
+/var/
+/vendor/
