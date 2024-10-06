@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="style/style.css" rel="stylesheet">
+	<link href="style/style.css" rel="stylesheet">
     <title>Mes films</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
@@ -13,7 +13,7 @@
 <body class="font-montserrat text-sm bg-white " >
 <div class="flex min-h-screen  2xl:max-w-screen-2xl 2xl:mx-auto 2xl:border-x-2 2xl:border-gray-200">
 
-	{% include '/parts/left_side.html.twig' %}
+	{% include '/parts/left_sidebar_with_border.html.twig' %}
 
     <main class=" flex-1 py-10  px-5 sm:px-10 ">
 
@@ -36,8 +36,8 @@
                 <a href="#" class="hover:text-gray-700 ">Animés</a>
             </nav>
 
-            <div class="flex flex-col justify-between mt-4 bg-black/10 bg-blend-multiply rounded-3xl h-80 overflow-hidden bg-cover bg-center px-7 pt-4 pb-6 text-white"
-                 style="background-image: url('images/inception.jpg');" >
+	<div class="flex flex-col justify-between mt-4 bg-black/10 bg-blend-multiply rounded-3xl h-80 overflow-hidden bg-cover bg-center px-7 pt-4 pb-6 text-white"
+     style="background-image: url('{{ asset('images/inception.jpg') }}');">
                 <div class="flex -space-x-1 items-center ">
                     <img class="rounded-full w-7 h-7 shadow-lg border border-white" src="https://random.imagecdn.app/100/100?a" alt="" srcset="">
                     <img class="rounded-full w-7 h-7 shadow-lg border border-white" src="https://random.imagecdn.app/100/100?b" alt="" srcset="">
@@ -45,7 +45,7 @@
                     <span class="pl-4 text-xs drop-shadow-lg">Recommandé par 12 amis</span>
                 </div>
 
-                <div class="bg-gradient-to-r from-black/40 to-transparent -mx-7 -mb-6 px-7 pb-6 pt-2">
+                <div class="bg-gradient-to-r from-black/30 to-transparent -mx-7 -mb-6 px-7 pb-6 pt-2">
                     <span class="uppercase text-3xl font-semibold drop-shadow-lg ">Inception</span>
                     <div class="text-xs text-gray-200 mt-2">
                         <a href="#" class="">Action</a>,
